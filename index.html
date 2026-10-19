@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Open Source</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #18324a;
+      background: #f5f8fc;
+    }
+
+    header {
+      background: #12335a;
+      color: white;
+      padding: 18px 7%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #12335a;
+      color: white;
+      padding: 70px 7%;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      max-width: 700px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      font-size: 1.15rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f58a24;
+      color: #172a43;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .button:hover, .button:focus {
+      background: #ffae58;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      border-top: 5px solid #f58a24;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .card a { color: #075b9d; }
+
+    section { margin-bottom: 55px; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #12335a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <strong>Discover Open Source</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#apps">Applications</a>
+        <a href="#start">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Great software. Open possibilities.</h1>
+    <p>
+      Explore free and open-source applications
+      for everyday computing, creativity, and learning.
+    </p>
+    <a class="button" href="#apps">Explore Applications</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>What is open-source software?</h2>
+      <p>
+        Open-source software makes its source code available
+        for people to inspect, use, modify, and share under
+        the terms of its license. Many excellent applications
+        are available at no cost.
+      </p>
+    </section>
+
+    <section id="apps">
+      <h2>Featured Applications</h2>
+      <div class="cards">
+
+        <article class="card">
+          <h3>Firefox</h3>
+          <p>A web browser focused on choice and privacy.</p>
+          <a href="https://www.mozilla.org/firefox/"
+             target="_blank" rel="noopener noreferrer">
+            Visit Firefox
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>LibreOffice</h3>
+          <p>Create documents, spreadsheets, and presentations.</p>
+          <a href="https://www.libreoffice.org/"
+             target="_blank" rel="noopener noreferrer">
+            Visit LibreOffice
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>GIMP</h3>
+          <p>Edit photographs and create digital graphics.</p>
+          <a href="https://www.gimp.org/"
+             target="_blank" rel="noopener noreferrer">
+            Visit GIMP
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Audacity</h3>
+          <p>Record and edit audio with free software.</p>
+          <a href="https://www.audacityteam.org/"
+             target="_blank" rel="noopener noreferrer">
+            Visit Audacity
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="start">
+      <h2>Get Started Today</h2>
+      <p>
+        Choose one application that interests you.
+        Visit its official website, explore its features,
+        and try something new!
+      </p>
+      <a class="button" href="#apps">Find an Application</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Discover Open Source — Explore. Learn. Share.</p>
+  </footer>
+
+</body>
+</html>
